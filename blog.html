@@ -12,29 +12,22 @@
 </head>
 
 <body>
-<body>
-<script>
-text="<bookstore><book>";
-text=text+"<title>Everyday Italian</title>";
-text=text+"<author>Giada De Laurentiis</author>";
-text=text+"<year>2005</year>";
-text=text+"</book></bookstore>";
+<div id="wrap">
+	<div id="main">
+    	
+	</div>
+</div>
 
-if (window.DOMParser){
-  parser=new DOMParser();
-  xmlDoc=parser.parseFromString("http://kearchive.wordpress.com/feed/","text/xml");
-}else{ // code for IE
-  xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
-  xmlDoc.async=false;
-  xmlDoc.loadXML("http://kearchive.wordpress.com/feed/"); 
-}
-
-document.write(xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue);
-document.write("<br>");
-document.write(xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue);
-document.write("<br>");
-document.write(xmlDoc.getElementsByTagName("year")[0].childNodes[0].nodeValue);
-</script>
-</body>
+<div id="footer">
+	<b><a href="http://kesun.github.io">This is a test.</a></b>
+    <br />
+    more test text for teh lulz.
+    <br />
+    MOAR.
+    <br />
+    Please drop by <a target="_blank" href="http://snow365.me">my doodle yard</a> while this site is under construction.
+    <br />
+    © 2014 Ke Sun. 
+</div>
 </body>
 </html>
