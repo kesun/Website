@@ -11,7 +11,10 @@ $(document).ready(function() {
        }); 
 	   jQuery('.button', this).hide();
    });
-   $('.div1').click(function() {
-       $(this).toggle(1000);
-   }); 
+   $('#about-button').click(function(){
+        $('.aboutBox').slideToggle('fast');
+   });
+   $('#close-about').click(function(){
+	   $('.aboutBox').slideToggle('fast');
+   });
 });
